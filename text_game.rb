@@ -33,7 +33,7 @@ class Game
     # else
       # staying in the same place
     # end
-  
+
   def finish
     # print some special message
   end
