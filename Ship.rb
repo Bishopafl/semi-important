@@ -6,27 +6,27 @@ class Spaceship
 		@worlds_visited = []
 	end
 
-#flight
-def fly
-	puts "Taking off. You are airborne."
-	puts "Flying at #{@max_speed} warps"
-end
-puts "\n\n"
+	#flight
+	def fly
+		puts "Taking off. You are airborne."
+		puts "Flying at #{@max_speed} warps"
+	end
+	puts "\n\n"
 
-#land
-def land(world)
-	puts "Landing now!"
-	puts "Gets ready for all of my #{@weight} tons."
-	
-	#log that it visited that world
-	@worlds_visited.push(world)ø
-end
-	
-#array of worlds visited
-def worlds_visited
-	@worlds_visited
+	#land
+	def land(world)
+		puts "Landing now!"
+		puts "Gets ready for all of my #{@weight} tons."
+		
+		#log that it visited that world
+		@worlds_visited.push(world)
+	end
+		
+	#array of worlds visited
+	def worlds_visited
+		@worlds_visited
 
-endø
+	end
 
 end
 

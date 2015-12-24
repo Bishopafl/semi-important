@@ -70,9 +70,10 @@ class Payroll
 	end
 
 end
-		
 
 
+# example of multipayment and salaried employees
+# _________________________________________________
 # mark = HourlyEmployee.new("Mark", "markymark@gmail.com", 45, 100)
 # kevin = HourlyEmployee.new("Kevin", "homealone@gmail.com", 60, 150)
 # batman = SalariedEmployee.new("Bruce", "Bats@gmail.com", 100000)
@@ -92,14 +93,6 @@ employees = [nizar, josh, adam, jake]
 my_payroll = Payroll.new(employees)
 
 my_payroll.pay_employees
-
-
-
-
-
-
-
-
 
 # puts mark.calulate_salary
 # puts kevin.calulate_salary

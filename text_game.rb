@@ -1,8 +1,6 @@
 class Room
   attr_accessor(:exit, :description)
-  #     Room.new("N"  ,  "You are in a dark room")
-  #               |            |
-  #               v            v
+
   def initialize(exit,    description)
     @exit = exit
     @description = description
@@ -20,15 +18,14 @@ class Game
   end
 
   def add_room(room)
-    # add room to the array
-
+    
   end
 
-  def start
-    # display the first room's message
+  def start(description)
+    @description = my_game.start
   end
 
-  def move(direction)
+  # def move(direction)
     # if # moving towards exit
       # update location
       # display next room's message
@@ -36,9 +33,7 @@ class Game
     # else
       # staying in the same place
     # end
-
-  end
-
+  
   def finish
     # print some special message
   end
@@ -95,8 +90,9 @@ input = gets.chomp
 #   puts "YOU ARE STUCK IN ROOM 1"
 # end
 
-for my_room1.exit?(input) do
+while my_room1.exit?(input) do
   puts my_room2.description
+  end
 end
 
 puts ""
@@ -107,6 +103,7 @@ puts ""
 
 if my_room2.exit?(input) do
   puts my_room3.description
+  end
 end
 
 puts""
@@ -117,6 +114,7 @@ puts ""
 
 if my_room3.exit?(input) do
   puts "Good job you completed all 3 rooms."
+  end
 end
 
 
