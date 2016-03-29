@@ -3,10 +3,6 @@ class Blog
 		@post = []
 	end
 
-	def add_post(post)
-		@new_post.push(post)
-	end
-
 	
 end
 

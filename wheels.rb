@@ -42,11 +42,30 @@ class WheelCounter
 	def initialize(vehicles)
 	@vehicles = vehicles	
 	end
-	def count
-		@vehicles.each do | counts |
-			puts counts.wheels
-		end
-	end
+	
+	# def count
+	# 	@vehicles.each do | counts |
+	# 		counts += vehicles.wheels
+	# 	end
+	# 	return counter
+	# end
+
+	 def count
+   num_wheels = @vehicles.reduce(0.0) do |sum, car|
+     sum + car.wheels
+   end
+   puts "The number of wheels: "
+   puts num_wheels
+  
+  #  counter = 0
+  #  @vehicles.each do | vehicle |
+  #    counter += vehicle.wheels
+  #  end
+  #  return counter
+  
+   num_wheels.to_i
+ end
+
 end
 		#return the number of wheels in @vehicles
 
